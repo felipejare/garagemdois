@@ -7,7 +7,10 @@ class Marca(models.Model):
     nacionalidade = models.CharField(max_length=50, null=True, blank=True)
 
     def __str__(self):
-        return self.nome
+        return f"{self.nome} - {self.nacionalidade}"
+    
+    class Meta:
+        verbose_name_plural = "Marcas"
     
 class Categoria(models.Model):
     descricao = models.CharField(max_length=100)
