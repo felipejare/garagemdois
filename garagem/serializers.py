@@ -24,3 +24,9 @@ class AcessorioSerializer(ModelSerializer):
     class Meta:
         model = Acessorio
         fields = "__all__"
+
+
+class ModeloSerializer(ModelSerializer):
+    class Meta:
+        model = Modelo
+        fields = "__all__"
