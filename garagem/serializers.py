@@ -42,3 +42,4 @@ class VeiculoDetailSerializer(ModelSerializer):
         model = Veiculo
         fields = "__all__"
         depth: 1
+        
