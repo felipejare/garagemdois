@@ -1,6 +1,5 @@
 from django.shortcuts import render
 
-# Create your views here.
 
 from rest_framework.viewsets import ModelViewSet
 
@@ -34,7 +33,6 @@ class ModeloViewSet(ModelViewSet):
 
 class VeiculoViewSet(ModelViewSet):
     queryset = Veiculo.objects.all()
-    
     def get_serializer_class(self):
         if self.action == "list":
             return VeiculoListSerializer
