@@ -4,33 +4,43 @@ from django.db import migrations, models
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
-        ('garagem', '0004_acessorio_cor_veiculo'),
+        ("garagem", "0004_acessorio_cor_veiculo"),
     ]
 
     operations = [
         migrations.CreateModel(
-            name='Modelo',
+            name="Modelo",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('nome', models.CharField(max_length=50)),
-                ('nacionalidade', models.CharField(blank=True, max_length=50, null=True)),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("nome", models.CharField(max_length=50)),
+                (
+                    "nacionalidade",
+                    models.CharField(blank=True, max_length=50, null=True),
+                ),
             ],
             options={
-                'verbose_name_plural': 'Modelos',
+                "verbose_name_plural": "Modelos",
             },
         ),
         migrations.AlterModelOptions(
-            name='acessorio',
-            options={'verbose_name': 'Acessório'},
+            name="acessorio",
+            options={"verbose_name": "Acessório"},
         ),
         migrations.AlterModelOptions(
-            name='cor',
-            options={'verbose_name_plural': 'Cores'},
+            name="cor",
+            options={"verbose_name_plural": "Cores"},
         ),
         migrations.AlterModelOptions(
-            name='veiculo',
-            options={'verbose_name': 'Veículo'},
+            name="veiculo",
+            options={"verbose_name": "Veículo"},
         ),
     ]
