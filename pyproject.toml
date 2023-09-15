@@ -1,8 +1,8 @@
 [tool.pdm]
 [tool.pdm.dev-dependencies]
 dev = [
-    "black>=23.3.0",
     "isort>=5.12.0",
+    "black>=23.3.0",
 ]
 
 [project]
@@ -10,11 +10,17 @@ name = ""
 version = ""
 description = ""
 authors = [
-    {name = "Felipe Augusto Kuhl", email = "a@a.com"},
+    {name = "Gabriela", email = "gabrielasaraiva.04@gmail.com"},
 ]
 dependencies = [
-    "django>=4.2.4",
+    "django>=4.2.5",
     "djangorestframework>=3.14.0",
+    "setuptools>=68.1.2",
+    "python-magic>=0.4.27",
+    "Pillow>=10.0.0",
+    "drf-spectacular>=0.26.4",
+    "django-extensions>=3.2.3",
+    "pydotplus>=2.0.2",
 ]
 requires-python = ">=3.10"
 license = {text = "MIT"}
